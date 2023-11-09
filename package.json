@@ -9,7 +9,8 @@
         "react-dom": "^18.2.0"
     },
     "scripts": {
-        "build": "next build"
-      }
+        "build": "next build",
+        "start": "next start"
+    }
       
 }
