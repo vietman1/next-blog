@@ -38,13 +38,13 @@ function ThemeSwitch() {
   };
 
   const text = darkMode ? "Light Mode" : "Dark Mode";
-  console.log("[ThemeSwitch] darkMode:", darkMode);
+  console.log("[ThemeSwitch] darkMode::", darkMode);
 
 
 // Style jsx will applied first
 // We are creating a DarkTheme component to render global css style jsx and import it here because we can't do it conditional rendering for style jsx.
 //If darkMode is true, we re-apply the styling to DarkTheme
-//We get the warnings and need to use this 'suppressHydrationWarning', because when the page is pre-rendered, the darkMode = false and in the client it is saved in the localStorage as darkMode = true, so there is a mismatch between server and client => next will show warnings.
+//We get the warnings and git push -u origin mainneed to use this 'suppressHydrationWarning', because when the page is pre-rendered, the darkMode = false and in the client it is saved in the localStorage as darkMode = true, so there is a mismatch between server and client => next will show warnings.
 
   return (
     <>
